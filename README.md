@@ -1,5 +1,5 @@
 # IMG2RGB565
-A Python GUI used to convert PNG or JPG images to 16-bit RGB565 C array for displaying sprites on TFT displays
+A Python GUI used to convert PNG, JPG or GIF images to 16-bit RGB565 C array for displaying sprites on TFT displays
 
 ![IMG2RGB565 5_07_2023 8_33_54 PM](https://github.com/OldMate6288/IMG2RGB565/assets/93004427/e797d71e-086f-4665-83ad-add2f360d3f8)
 ![RGB565](https://github.com/OldMate6288/IMG2RGB565/assets/93004427/e943c74d-5ee5-4d71-85f2-78eecb8b9673)
@@ -15,7 +15,9 @@ I made this because I needed to test some sprites on my Pico but was sick of usi
 5. Change the sprite resolution in the Arduino sketch to match your image resolution (DON'T FORGET TO CHANGE THE PIN DEFINITIONS, ROTATION AND RESOLUTION FOR YOUR LCD)
 6. Upload your code to your MCU and pray all works well
 
-***ONLY PNG AND JPG ARE CURRENTLY SUPPORTED, WILL ADD SUPPORT FOR GIFS WHEN I FIND OUT HOW TO CONVERT MORE THAN ONE IMAGE AT A TIME.***
+**UPDATE v1.1 - ADDED SUPPORT FOR GIF FILES**
+
+Usage is the same as normal. Open your animated GIF and the script will extract each frame and convert them to binary, then save all the individual files to a folder.
 
 **<sub>P.S. I couldn't find a reliable way to resize the image using pillow so for now resize your image manually before converting by using Photoshop or whatever photo editing software you prefer.<sub/>**
 
