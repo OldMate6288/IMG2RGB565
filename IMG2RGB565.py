@@ -78,13 +78,6 @@ window.title("IMG2RGB565 v1.1")
 # Set the size of the GUI window
 window.geometry("400x350")  # Width x Height
 
-# Load the logo image
-logo_image = tk.PhotoImage(file="C:\img\logo2.png")
-
-# Create a label for the logo image
-logo_label = tk.Label(window, image=logo_image)
-logo_label.pack(pady=10)
-
 # Show file output path
 output_path_label = tk.Label(window, text="Output Path:")
 output_path_label.pack()
